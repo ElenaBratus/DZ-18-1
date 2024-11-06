@@ -32,9 +32,16 @@ item.classList.toggle("liked");
 });*/
 let forma = document.querySelector(".forma");
 let details = document.querySelectorAll(".details");
+let closeBtn = document.querySelector(".close");
 details.forEach((item) =>
 item.addEventListener("click", function () {
-    forma.style.display = "block"
+    forma.style.display = "block";
+    
 }));
-
+closeBtn.forEach((item) => {
+    item.addEventListener("click", function () {
+        forma.style.classList = ".forma";
+}
+)
+});
 
