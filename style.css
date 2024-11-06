@@ -548,7 +548,7 @@ sup {
 }
 .forma {
   display: none;
-  width: 25%;
+  width: 20%;
   height: 400px;
   border: 3px solid black;
   position: fixed;
@@ -588,10 +588,12 @@ input[type="text"]::placeholder {
   font-style: italic;
 }
 .close {
-  width: 8%;
+  width: 6%;
   height: 40px;
   float: right;
-  margin-left: 400px;
+  margin-left: 500px;
   background-image: url(images/close.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
