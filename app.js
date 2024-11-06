@@ -15,11 +15,17 @@ item.addEventListener("click", function () {
 }));
 let likeBtn = document.querySelectorAll(".like");
 console.log(likeBtn);
-likeBtn.forEach((item) =>
-item.addEventListener("click", function () {
-item.style.backgroundColor = "red"
-}))
-;
+likeBtn.forEach((item) => {
+   item.addEventListener("click", function () {
+/*if (item.classList.contains("liked")) {
+item.classList.remove("liked");
+} else {
+    item.classList.add("liked");
+}*/
+item.classList.toggle("liked");
+});
+
+});
 
 /*item.addEventListener("click", function() {
     likeBtn.addEventListener = likeBtn.addEventListener + 1;
