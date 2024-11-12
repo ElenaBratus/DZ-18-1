@@ -26,22 +26,17 @@ item.classList.toggle("liked");
 });
 
 });
-
-/*item.addEventListener("click", function() {
-    likeBtn.addEventListener = likeBtn.addEventListener + 1;
-});*/
+ let openForma = document.querySelectorAll(".details");
 let forma = document.querySelector(".forma");
-let details = document.querySelectorAll(".details");
 let closeBtn = document.querySelector(".close");
-details.forEach((item) =>
-item.addEventListener("click", function () {
-    forma.style.display = "block";
-    
-}));
-closeBtn.forEach((item) => {
+
+openForma.forEach((item) => {
     item.addEventListener("click", function () {
-        forma.style.classList = ".forma";
-}
-)
-});
+       forma.style.display = "block";  
+})});
+closeBtn.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    forma.style.display = "none";
+    })
+
 

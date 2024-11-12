@@ -558,6 +558,10 @@ sup {
   transform: translate(-50%, -50%);
   background-color: gray;
 }
+
+.open {
+  display: block;
+}
 form {
   width: 100%;
   height: 400px;
